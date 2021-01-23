@@ -7,8 +7,9 @@
 }
 
 #header-img {
-    grid-area: logo;   
-    background-color: pink;
+    height: 20px;
+    width: 20px;
+    align-self: flex-start;
 }
 
 nav {
