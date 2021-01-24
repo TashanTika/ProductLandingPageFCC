@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding-left: 5px;
+
+}
+
+#header-img{
+    margin-top: 5px;
+    max-width: 200px;
+    align-items: left;
+}
+
+nav{
+    padding-left: 5px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.nav-link{
+    text-decoration: none;
+    align-items: center;
+}
+
+
+
+#phn-img{
+    margin: 100px auto;
+    display: block;
+    max-width: 500px;
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+/* https://css-tricks.com/gradient-borders-in-css/ - For the gradient Border, adjust from red to blue to match as per the samsung logo color */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: minmax(50px, auto);
+    padding: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        blue, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    text-align: center;
+}
+
+/* Text linear gradient https://css-tricks.com/snippets/css/gradient-text/ */
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    background: -webkit-linear-gradient(rgb(7, 142, 233), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+#video{
+    margin: 0px;
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        blue, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    padding: 50px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+}
+
+#email{
+    width: 70%;
+    border-color: blue ;
+    text-align: center;
+    font-weight: bold;
+}
+
+#submit{
+    width:25%;
+    border-color: blue;
+    font-weight: bold;
+    color: grey;
+}
+
+@media (max-width: 800px) {
+    .column {
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(119, 1, 143), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    }
+
+    #video{
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(119, 1, 143), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    }
+  }
+
+
